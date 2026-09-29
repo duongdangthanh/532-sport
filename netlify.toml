@@ -1,0 +1,10 @@
+# Static HTML/CSS: no install, build command, secrets, or server required.
+[build]
+  command = ""
+  publish = "public"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
